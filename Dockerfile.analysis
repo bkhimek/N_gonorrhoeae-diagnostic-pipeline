@@ -1,0 +1,2 @@
+FROM quay.io/biocontainers/panaroo:1.3.4--pyhdfd78af_0
+RUN pip install pandas biopython --break-system-packages || pip install pandas biopython

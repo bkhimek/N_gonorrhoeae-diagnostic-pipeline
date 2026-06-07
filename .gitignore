@@ -1,0 +1,8 @@
+work/
+results/
+data/
+.nextflow/
+.nextflow.log*
+*.fna
+*.fasta
+*.gz
