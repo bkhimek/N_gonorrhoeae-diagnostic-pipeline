@@ -1,8 +1,11 @@
+results/panaroo/
+results/prokka/
+results/split/
+results/pass_fastas/
+results/inclusivity/
+results/exclusivity/blast_results.tsv
+*.log
 work/
-results/
-data/
 .nextflow/
 .nextflow.log*
-*.fna
-*.fasta
-*.gz
+results/exclusivity/
