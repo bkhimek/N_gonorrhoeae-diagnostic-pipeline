@@ -1,3 +1,4 @@
+params.negative_taxidlist = "" 
 params.gffs           = "/home/himek/s_pyogenes_project/prokka_output/*/*.gff"
 params.blast_db       = "/home/himek/s_pyogenes_project/streptococcus_non_pyogenes_db"
 params.core_threshold = 0.99
@@ -102,13 +103,14 @@ process BLAST_EXCLUSIVITY {
     script:
     """
     blastn \
-        -query ${consensus} \
-        -db ${params.blast_db} \
-        -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen qcovs sscinames staxids stitle" \
-        -perc_identity 1 \
-        -qcov_hsp_perc 50 \
-        -num_threads 8 \
-        -out blast_results.tsv
+    -query ${consensus} \
+    -db ${params.blast_db} \
+    -negative_taxidlist ${params.negative_taxidlist} \
+    -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen qcovs sscinames staxids stitle" \
+    -perc_identity 1 \
+    -qcov_hsp_perc 50 \
+    -num_threads 8 \
+    -out blast_results.tsv
     """
 }
 

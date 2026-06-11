@@ -8,4 +8,3 @@ results/exclusivity/blast_results.tsv
 work/
 .nextflow/
 .nextflow.log*
-results/exclusivity/
