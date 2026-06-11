@@ -1,0 +1,799 @@
+Gene	neighbor	best_pident	best_qcovs	decision
+surE	Neisseria meningitidis	87.45	100	REJECT
+narQ	Neisseria meningitidis	90.935	99	REJECT
+pigA	Neisseria meningitidis	91.111	100	REJECT
+lptA	Neisseria meningitidis	91.149	100	REJECT
+rffG	Neisseria meningitidis	91.33	98	REJECT
+rfaC	Neisseria polysaccharea	91.434	100	REJECT
+xerD	Neisseria lactamica	91.562	100	REJECT
+yiaD	Neisseria sp. Marseille-Q6792	91.74	100	REJECT
+panC	Neisseria meningitidis	92.092	98	REJECT
+mupP	Neisseria meningitidis G2136,	92.18	100	REJECT
+lptB	Neisseria meningitidis	92.245	100	REJECT
+trpB	Neisseria lactamica	92.263	99	REJECT
+pgsA	Neisseria polysaccharea	92.376	100	REJECT
+trmA	Neisseria meningitidis	92.378	100	REJECT
+pyrD	Neisseria meningitidis	92.423	100	REJECT
+ispE	Neisseria meningitidis	92.462	100	REJECT
+pepA	Neisseria meningitidis 8013,	92.574	100	REJECT
+yjjV	Neisseria meningitidis	92.626	100	REJECT
+tatB	Neisseria meningitidis	92.645	100	REJECT
+tsaC	Neisseria lactamica	92.691	99	REJECT
+glnG	Neisseria meningitidis	92.729	100	REJECT
+queC	Neisseria meningitidis	92.741	100	REJECT
+ubiC	Neisseria meningitidis M0579,	92.887	100	REJECT
+purK	Neisseria meningitidis	92.927	98	REJECT
+pheT	Neisseria polysaccharea	92.945	100	REJECT
+clpX	Neisseria meningitidis	93.012	100	REJECT
+ampD	Neisseria meningitidis	93.019	100	REJECT
+folC	Neisseria meningitidis	93.098	99	REJECT
+yigZ	Neisseria meningitidis	93.137	100	REJECT
+hisC2	Neisseria polysaccharea	93.152	99	REJECT
+hemC	Neisseria sp. Marseille-Q6792	93.162	100	REJECT
+bioD1	Neisseria meningitidis	93.241	100	REJECT
+tcyB	Neisseria sp. Marseille-Q5346	93.305	100	REJECT
+hexR	Neisseria lactamica 020-06	93.404	100	REJECT
+miaA	Neisseria meningitidis	93.446	100	REJECT
+pcm	Neisseria polysaccharea	93.455	100	REJECT
+uvrC	Neisseria meningitidis 8013,	93.471	99	REJECT
+potH	Neisseria sp. Marseille-Q6792	93.478	100	REJECT
+ansA	Neisseria meningitidis	93.561	100	REJECT
+rimI	Neisseria lactamica	93.636	99	REJECT
+dusB	Neisseria meningitidis 053442,	93.769	99	REJECT
+purD	Neisseria polysaccharea	93.789	100	REJECT
+norR	Neisseria meningitidis	93.825	58	PASS
+folP	Neisseria meningitidis	93.839	99	REJECT
+corC	Neisseria meningitidis	93.841	96	REJECT
+rapZ	Neisseria meningitidis	93.918	100	REJECT
+algC	Neisseria meningitidis	93.926	100	REJECT
+recR	Neisseria polysaccharea	93.934	99	REJECT
+glmU	Neisseria meningitidis	93.956	100	REJECT
+mpl	Neisseria meningitidis alpha710,	93.977	100	REJECT
+nrtB	Neisseria sp. Marseille-Q5346	94.017	100	REJECT
+lptD	Neisseria lactamica	94.033	98	REJECT
+zwf	Neisseria polysaccharea	94.053	100	REJECT
+mntB	Neisseria lactamica	94.064	100	REJECT
+yajR	Neisseria sp. Marseille-Q6792	94.093	100	REJECT
+trpG	Neisseria lactamica	94.098	100	REJECT
+dedA	Neisseria meningitidis	94.118	100	REJECT
+ileS	Neisseria sp. Marseille-Q6792	94.122	100	REJECT
+etfB	Neisseria meningitidis	94.133	100	REJECT
+glmM	Neisseria meningitidis	94.162	100	REJECT
+aroE	Neisseria meningitidis	94.251	60	PASS
+rplA	Neisseria meningitidis	94.253	100	REJECT
+ppsR	Neisseria meningitidis M01-240355,	94.282	100	REJECT
+tatC	Neisseria meningitidis	94.293	100	REJECT
+rnb	Neisseria meningitidis	94.312	100	REJECT
+bspRIM	Neisseria sp. DTU_2021_1001991_1_SI_NGA_ILE_055	94.316	100	REJECT
+xseA	Neisseria meningitidis	94.326	100	REJECT
+rlmN	Neisseria meningitidis	94.338	100	REJECT
+tktA	Neisseria lactamica	94.343	100	REJECT
+sdhB	Neisseria meningitidis	94.35	100	REJECT
+ridA	Neisseria meningitidis 053442,	94.359	100	REJECT
+tilS	Neisseria meningitidis	94.368	100	REJECT
+tsaB	Neisseria lactamica	94.37	99	REJECT
+murD	Neisseria sp. CP9	94.399	100	REJECT
+suhB	Neisseria meningitidis	94.402	100	REJECT
+murJ	Neisseria meningitidis	94.412	100	REJECT
+fis	Neisseria polysaccharea	94.419	89	REJECT
+priA	Neisseria meningitidis	94.475	100	REJECT
+tyrB	Neisseria lactamica	94.482	100	REJECT
+hrpA	Neisseria meningitidis	94.509	99	REJECT
+lysA	Neisseria lactamica	94.513	100	REJECT
+rpe	Neisseria meningitidis	94.517	99	REJECT
+lptG	Neisseria meningitidis	94.527	100	REJECT
+scpA	Neisseria polysaccharea	94.539	96	REJECT
+der	Neisseria lactamica 020-06	94.544	100	REJECT
+gatB	Neisseria meningitidis	94.549	100	REJECT
+ybeY	Neisseria meningitidis 053442,	94.574	100	REJECT
+murG	Neisseria meningitidis 053442,	94.574	100	REJECT
+farB	Neisseria meningitidis	94.575	100	REJECT
+edd	Neisseria meningitidis	94.608	100	REJECT
+yheS	Neisseria sp. Marseille-Q6792	94.628	93	REJECT
+acnD	Neisseria meningitidis	94.635	100	REJECT
+trpE	Neisseria elongata	94.651	100	REJECT
+serS	Neisseria meningitidis	94.676	100	REJECT
+gltX	Neisseria meningitidis alpha14	94.695	100	REJECT
+recC	Neisseria meningitidis	94.709	100	REJECT
+hemL	Neisseria polysaccharea	94.712	100	REJECT
+murB	Neisseria meningitidis M0579,	94.727	100	REJECT
+surA	Neisseria meningitidis NIID777 DNA,	94.743	91	REJECT
+hisE	Neisseria meningitidis	94.753	100	REJECT
+ybeZ	Neisseria meningitidis NIID777 DNA,	94.77	100	REJECT
+glyA	Neisseria meningitidis	94.783	99	REJECT
+thiG	Neisseria meningitidis	94.789	93	REJECT
+mtrA	Neisseria meningitidis	94.812	100	REJECT
+mutY	Neisseria meningitidis	94.813	100	REJECT
+eda	Neisseria lactamica	94.836	100	REJECT
+metN	Neisseria polysaccharea	94.851	100	REJECT
+puuB	Neisseria meningitidis	94.861	100	REJECT
+besA	Neisseria meningitidis	94.872	100	REJECT
+mtgA	Neisseria meningitidis	94.872	100	REJECT
+metK	Neisseria sp. Marseille-Q6792	94.872	100	REJECT
+fhs	Neisseria meningitidis	94.931	100	REJECT
+ppiD	Neisseria meningitidis	94.932	100	REJECT
+folK	Neisseria meningitidis	94.949	100	REJECT
+glyS	Neisseria meningitidis	94.949	99	REJECT
+gabD	Neisseria meningitidis	94.979	100	REJECT
+yeeZ	Neisseria meningitidis	94.981	100	REJECT
+acpS	Neisseria meningitidis	94.987	100	REJECT
+ftsX	Neisseria meningitidis	94.995	100	REJECT
+cysS	Neisseria meningitidis	95.0	99	REJECT
+prlC	Neisseria meningitidis	95.02	99	REJECT
+dnrN	Neisseria meningitidis	95.024	89	REJECT
+argS	Neisseria sp. oral taxon 014 str. F0314	95.055	100	REJECT
+upp	Neisseria sp. Marseille-Q6792	95.056	100	REJECT
+tal	Neisseria meningitidis	95.076	99	REJECT
+thiC	Neisseria meningitidis M01-240355,	95.09	100	REJECT
+recJ	Neisseria meningitidis	95.121	100	REJECT
+ycfH	Neisseria meningitidis	95.128	100	REJECT
+ubiD	Neisseria meningitidis	95.134	100	REJECT
+purC	Neisseria meningitidis	95.139	100	REJECT
+ychF	Neisseria polysaccharea	95.151	100	REJECT
+ribBA	Neisseria meningitidis	95.153	100	REJECT
+oprM	Neisseria sp. Marseille-Q6792	95.164	100	REJECT
+rplK	Neisseria sp. RH3002v2g	95.172	100	REJECT
+mfd	Neisseria sicca	95.178	53	PASS
+rlmK	Neisseria meningitidis alpha14	95.197	99	REJECT
+lst	Neisseria lactamica 020-06	95.201	100	REJECT
+rsmJ	Neisseria meningitidis	95.219	100	REJECT
+nhaC	Neisseria meningitidis	95.221	100	REJECT
+parE	Neisseria lactamica	95.224	100	REJECT
+lapA	Neisseria flavescens	95.238	100	REJECT
+uvrA	Neisseria meningitidis M01-240355,	95.247	98	REJECT
+metE	Neisseria polysaccharea	95.257	100	REJECT
+hemA	Neisseria meningitidis	95.272	100	REJECT
+cmk	Neisseria meningitidis M01-240355,	95.282	100	REJECT
+purH	Neisseria meningitidis M01-240355,	95.305	82	REJECT
+menF	Neisseria meningitidis LNP21362,	95.307	56	PASS
+yidC	Neisseria meningitidis	95.316	100	REJECT
+fadD	Neisseria meningitidis	95.316	83	REJECT
+purB	Neisseria lactamica	95.332	100	REJECT
+gcvH	Neisseria polysaccharea	95.349	100	REJECT
+accD	Neisseria meningitidis	95.386	99	REJECT
+metF	Neisseria meningitidis	95.386	98	REJECT
+birA	Neisseria meningitidis alpha14	95.391	100	REJECT
+nadD	Neisseria meningitidis NIID777 DNA,	95.402	100	REJECT
+sdhA	Neisseria meningitidis	95.408	100	REJECT
+ilvD	Neisseria lactamica	95.43	100	REJECT
+icd	Neisseria meningitidis	95.431	99	REJECT
+ispU	Neisseria meningitidis	95.436	99	REJECT
+panB	Neisseria lactamica	95.455	100	REJECT
+rsxB	Neisseria meningitidis	95.482	100	REJECT
+folE2	Neisseria lactamica	95.484	100	REJECT
+prfC	Neisseria meningitidis	95.489	100	REJECT
+scaC	Neisseria lactamica	95.503	100	REJECT
+cvpA	Neisseria meningitidis	95.503	94	REJECT
+mdtK	Neisseria meningitidis	95.507	100	REJECT
+cpoB	Neisseria sp. Marseille-Q6792	95.518	100	REJECT
+rmlC	Neisseria lactamica	95.52	100	REJECT
+ppiA	Neisseria meningitidis	95.52	100	REJECT
+hisS	Neisseria meningitidis	95.525	100	REJECT
+adk	Neisseria meningitidis	95.525	100	REJECT
+metC	Neisseria meningitidis	95.526	98	REJECT
+queA	Neisseria meningitidis	95.534	99	REJECT
+lolD	Neisseria meningitidis	95.546	100	REJECT
+dxr	Neisseria meningitidis	95.55	100	REJECT
+dapA	Neisseria meningitidis	95.553	100	REJECT
+valS	Neisseria lactamica	95.562	100	REJECT
+proS	Neisseria meningitidis	95.563	100	REJECT
+uvrD	Neisseria meningitidis	95.566	100	REJECT
+hemB	Neisseria meningitidis	95.609	100	REJECT
+gshB	Neisseria sp. Marseille-Q6792	95.611	100	REJECT
+ribA	Neisseria meningitidis	95.623	100	REJECT
+thiE	Neisseria meningitidis	95.631	100	REJECT
+ybiT	Neisseria meningitidis	95.641	100	REJECT
+dnaQ	Neisseria meningitidis	95.646	100	REJECT
+truB	Neisseria meningitidis NMB	95.657	100	REJECT
+anr	Neisseria meningitidis	95.67	100	REJECT
+yhgF	Eikenella corrodens	95.699	94	REJECT
+lysS	Neisseria meningitidis	95.701	100	REJECT
+ettA	Neisseria lactamica	95.707	100	REJECT
+rsmD	Neisseria polysaccharea	95.712	98	REJECT
+polA	Neisseria meningitidis	95.714	68	PASS
+rmlD	Neisseria meningitidis	95.727	100	REJECT
+metXS	Neisseria meningitidis	95.741	99	REJECT
+trpD	Neisseria meningitidis 053442,	95.747	98	REJECT
+obg	Neisseria meningitidis	95.75	99	REJECT
+nqrA	Neisseria subflava	95.759	100	REJECT
+ppsA	Neisseria meningitidis	95.767	100	REJECT
+rsmA	Neisseria meningitidis	95.769	100	REJECT
+nuoF	Neisseria meningitidis	95.776	100	REJECT
+yhhQ	Neisseria lactamica	95.779	100	REJECT
+lpxC	Neisseria meningitidis	95.779	100	REJECT
+nqo2	Neisseria meningitidis NIID777 DNA,	95.781	100	REJECT
+vbhT	Morococcus cerebrosus	95.783	100	REJECT
+cah	Neisseria elongata	95.784	100	REJECT
+secD	Neisseria meningitidis	95.793	100	REJECT
+kdsD	Neisseria meningitidis	95.795	100	REJECT
+trmJ	Neisseria sp. Marseille-Q6792	95.796	96	REJECT
+ubiE	Neisseria meningitidis	95.799	100	REJECT
+ppk	Neisseria meningitidis	95.799	100	REJECT
+fbp	Neisseria sp. Marseille-Q6792	95.804	96	REJECT
+hscB	Neisseria lactamica	95.808	100	REJECT
+glnS	Neisseria meningitidis alpha14	95.819	100	REJECT
+tyrS	Neisseria meningitidis 8013,	95.837	100	REJECT
+hldE	Neisseria meningitidis alpha14	95.846	100	REJECT
+truC	Neisseria sp. Marseille-Q6792	95.849	99	REJECT
+yrdA	Neisseria meningitidis	95.857	100	REJECT
+truA	Neisseria meningitidis	95.865	100	REJECT
+galE	Neisseria lactamica	95.874	100	REJECT
+lepA	Neisseria meningitidis	95.875	100	REJECT
+radA	Neisseria meningitidis	95.876	100	REJECT
+lptF	Neisseria meningitidis	95.878	100	REJECT
+murF	Neisseria meningitidis	95.879	100	REJECT
+hsrA	Neisseria meningitidis 8013,	95.88	99	REJECT
+iscS	Neisseria meningitidis NIID777 DNA,	95.885	100	REJECT
+murC	Neisseria meningitidis	95.889	100	REJECT
+nadB	Neisseria polysaccharea	95.891	100	REJECT
+pgk	Neisseria lactamica	95.896	100	REJECT
+yfiH	Neisseria meningitidis	95.897	100	REJECT
+lgt	Neisseria meningitidis	95.897	100	REJECT
+dadA	Neisseria meningitidis	95.92	99	REJECT
+petB	Neisseria meningitidis	95.926	100	REJECT
+act	Neisseria meningitidis	95.926	100	REJECT
+rarA	Neisseria sicca	95.934	98	REJECT
+metG	Neisseria sp. RH3002v2g	95.94	68	PASS
+pcnB	Neisseria meningitidis	95.96	100	REJECT
+ffh	Neisseria meningitidis M01-240355,	95.968	99	REJECT
+yciO	Neisseria meningitidis	95.974	100	REJECT
+parC	Neisseria meningitidis	95.974	100	REJECT
+ispA	Neisseria meningitidis	95.978	99	REJECT
+moeB	Neisseria meningitidis	96.0	100	REJECT
+ftsZ	Neisseria polysaccharea	96.014	100	REJECT
+bamE	Neisseria meningitidis	96.032	100	REJECT
+cysK	Neisseria polysaccharea	96.034	100	REJECT
+ccsA	Neisseria meningitidis 053442,	96.044	100	REJECT
+trpS	Neisseria meningitidis	96.044	100	REJECT
+lptC	Neisseria meningitidis	96.048	100	REJECT
+gluQ	Neisseria meningitidis 053442,	96.05	99	REJECT
+luxS	Neisseria polysaccharea	96.055	100	REJECT
+ppc	Neisseria meningitidis	96.06	100	REJECT
+gnd	Neisseria meningitidis	96.066	100	REJECT
+dnaE	Neisseria sp. Marseille-Q6792	96.07	100	REJECT
+ubiA	Neisseria meningitidis	96.072	100	REJECT
+yhhT	Neisseria meningitidis	96.078	100	REJECT
+bioA	Neisseria meningitidis	96.083	100	REJECT
+gtaB	Neisseria meningitidis	96.092	100	REJECT
+crcB	Neisseria meningitidis M01-240355,	96.111	100	REJECT
+fumC	Neisseria lactamica	96.112	100	REJECT
+hda	Neisseria polysaccharea	96.114	100	REJECT
+eno	Neisseria meningitidis	96.118	100	REJECT
+mlaE	Neisseria meningitidis	96.139	100	REJECT
+asd	Neisseria meningitidis	96.147	100	REJECT
+nosY	Neisseria lactamica 020-06	96.149	100	REJECT
+rplY	Neisseria meningitidis alpha14	96.161	100	REJECT
+leuS	Neisseria meningitidis	96.17	100	REJECT
+dapE	Neisseria mucosa	96.171	93	REJECT
+ftsK	Neisseria meningitidis	96.187	100	REJECT
+pth	Neisseria lactamica	96.194	99	REJECT
+ilvK	Neisseria meningitidis	96.196	100	REJECT
+yqeY	Neisseria meningitidis	96.197	100	REJECT
+acnM	Neisseria meningitidis	96.21	99	REJECT
+nuoI	Neisseria subflava	96.218	99	REJECT
+ubiB	Neisseria meningitidis alpha14	96.23	100	REJECT
+lpdA	Neisseria meningitidis	96.234	99	REJECT
+frr	Neisseria meningitidis	96.237	100	REJECT
+xthA	Neisseria polysaccharea	96.239	100	REJECT
+metXA	Neisseria polysaccharea	96.246	100	REJECT
+alaS	Neisseria lactamica	96.254	99	REJECT
+hemW	Neisseria meningitidis	96.255	99	REJECT
+mexB	Neisseria meningitidis	96.255	100	REJECT
+leuB	Neisseria meningitidis NMB	96.265	100	REJECT
+rmpM	Neisseria meningitidis 8013,	96.266	100	REJECT
+ydcV	Neisseria meningitidis G2136,	96.284	100	REJECT
+mnmE	Neisseria lactamica	96.288	100	REJECT
+hinT	Neisseria meningitidis	96.296	100	REJECT
+alaA	Neisseria polysaccharea	96.296	100	REJECT
+rne	Neisseria meningitidis	96.304	100	REJECT
+mnmG	Neisseria meningitidis alpha14	96.308	100	REJECT
+leuD	Neisseria meningitidis	96.325	100	REJECT
+ccs1	Neisseria meningitidis	96.329	100	REJECT
+tig	Neisseria meningitidis	96.339	100	REJECT
+hslO	Neisseria meningitidis	96.37	100	REJECT
+dusA	Neisseria meningitidis	96.374	100	REJECT
+apbC	Neisseria meningitidis alpha14	96.389	100	REJECT
+dnaG	Neisseria meningitidis alpha710,	96.39	100	REJECT
+ddl	Neisseria meningitidis	96.393	100	REJECT
+nrdA	Neisseria meningitidis	96.4	99	REJECT
+pilQ	Neisseria meningitidis secretin precursor (pilQ) gene, complete cds	96.41	77	PASS
+exoA	Neisseria meningitidis	96.41	100	REJECT
+murU	Neisseria meningitidis	96.413	100	REJECT
+gloB	Neisseria meningitidis 8013,	96.414	100	REJECT
+pheA	Neisseria meningitidis 8013,	96.419	100	REJECT
+nqo3	Neisseria meningitidis	96.419	100	REJECT
+clpP	Neisseria polysaccharea	96.423	100	REJECT
+pepN	Neisseria sicca	96.429	100	REJECT
+mtnN	Neisseria meningitidis	96.439	100	REJECT
+acnB	Neisseria meningitidis	96.44	99	REJECT
+tusA	Neisseria meningitidis	96.444	100	REJECT
+bioH	Neisseria meningitidis	96.445	100	REJECT
+rplI	Neisseria polysaccharea	96.468	100	REJECT
+lipB	Neisseria meningitidis	96.474	100	REJECT
+coaBC	Neisseria meningitidis	96.474	100	REJECT
+recN	Neisseria meningitidis alpha14	96.476	100	REJECT
+rpsF	Neisseria lactamica	96.477	100	REJECT
+aroB	Neisseria meningitidis	96.481	100	REJECT
+msrAB	Neisseria meningitidis	96.495	100	REJECT
+nnr	Neisseria meningitidis NIID777 DNA,	96.521	100	REJECT
+bamA	Neisseria meningitidis	96.522	87	REJECT
+glmS	Neisseria lactamica	96.524	100	REJECT
+pyrH	Neisseria meningitidis alpha14	96.528	100	REJECT
+dnaA	Neisseria polysaccharea	96.532	100	REJECT
+gatA	Neisseria meningitidis NIID777 DNA,	96.542	100	REJECT
+aroC	Neisseria meningitidis M01-240355,	96.549	100	REJECT
+rhaS	Neisseria sp. CP9	96.552	100	REJECT
+arcB	Neisseria perflava argF gene,	96.552	70	PASS
+prfB	Neisseria lactamica	96.558	100	REJECT
+atpD1	Neisseria meningitidis NMB	96.562	99	REJECT
+amiC	Neisseria meningitidis NMB	96.563	100	REJECT
+nosL	Neisseria lactamica	96.566	100	REJECT
+katA	Neisseria cinerea	96.568	100	REJECT
+hprK	Neisseria meningitidis M0579,	96.573	100	REJECT
+grxB	Neisseria meningitidis	96.573	100	REJECT
+gpt	Neisseria meningitidis	96.578	99	REJECT
+uvrB	Eikenella exigua	96.583	98	REJECT
+secA	Neisseria meningitidis	96.583	100	REJECT
+rlmL	Neisseria meningitidis	96.588	100	REJECT
+comM	Neisseria meningitidis 8013,	96.595	100	REJECT
+folD	Neisseria lactamica 020-06	96.608	100	REJECT
+psd	Neisseria sp. Marseille-Q5346	96.61	83	REJECT
+panD	Neisseria meningitidis	96.615	100	REJECT
+cbbA	Neisseria meningitidis	96.62	100	REJECT
+pntA	Neisseria meningitidis	96.628	100	REJECT
+ispH	Neisseria lactamica	96.633	94	REJECT
+nqrF	Neisseria lactamica 020-06	96.634	100	REJECT
+yidD	Neisseria meningitidis	96.635	91	REJECT
+coaD	Neisseria lactamica	96.64	98	REJECT
+ycgM	Neisseria meningitidis	96.651	100	REJECT
+ygfZ	Neisseria lactamica	96.655	100	REJECT
+aceF	Neisseria meningitidis	96.656	60	PASS
+yeiR	Neisseria lactamica 020-06	96.656	100	REJECT
+relA	Neisseria meningitidis	96.658	100	REJECT
+nuoM	Neisseria meningitidis	96.66	100	REJECT
+thrC	Neisseria meningitidis	96.66	100	REJECT
+nqrD	Neisseria lactamica	96.661	100	REJECT
+ptsN	Neisseria meningitidis	96.667	100	REJECT
+rnc	Neisseria meningitidis	96.667	100	REJECT
+ssuB	Morococcus cerebrosus	96.681	100	REJECT
+pyrG	Neisseria meningitidis	96.697	100	REJECT
+groL	Neisseria lactamica	96.697	100	REJECT
+rhaS_2	Neisseria meningitidis	96.702	100	REJECT
+ung	Neisseria meningitidis	96.708	97	REJECT
+nadC	Neisseria meningitidis	96.712	100	REJECT
+tsaD	Neisseria polysaccharea	96.714	100	REJECT
+pyrC	Neisseria meningitidis	96.715	100	REJECT
+dapD	Neisseria meningitidis	96.715	100	REJECT
+hldD	Neisseria meningitidis	96.716	100	REJECT
+grpE	Neisseria meningitidis	96.718	100	REJECT
+smc	Morococcus cerebrosus	96.726	99	REJECT
+rplV	Neisseria meningitidis	96.726	100	REJECT
+rpiA	Neisseria meningitidis	96.726	100	REJECT
+putA	Neisseria meningitidis	96.731	100	REJECT
+lolB	Neisseria meningitidis	96.735	100	REJECT
+nuoD	Neisseria lactamica	96.738	100	REJECT
+mutM	Neisseria meningitidis	96.739	100	REJECT
+leuA	Neisseria meningitidis	96.767	100	REJECT
+accA	Neisseria meningitidis	96.771	100	REJECT
+aroD	Neisseria meningitidis	96.791	98	REJECT
+rpoB	Neisseria polysaccharea	96.793	100	REJECT
+yffB	Neisseria meningitidis M01-240355,	96.8	100	REJECT
+aspC	Neisseria cinerea	96.801	99	REJECT
+gmhA	Neisseria meningitidis M01-240355,	96.801	100	REJECT
+hpnC	Neisseria polysaccharea	96.802	100	REJECT
+pdhD	Neisseria meningitidis	96.803	100	REJECT
+rbgA	Neisseria polysaccharea	96.815	100	REJECT
+rnd	Neisseria meningitidis	96.825	99	REJECT
+queH	Neisseria meningitidis	96.832	100	REJECT
+queF	Neisseria meningitidis	96.835	100	REJECT
+gyrA	Neisseria meningitidis	96.838	100	REJECT
+pdxH	Neisseria sp. Marseille-Q6792	96.84	100	REJECT
+outO	Neisseria polysaccharea	96.842	99	REJECT
+lipA	Neisseria polysaccharea	96.85	100	REJECT
+spoT	Neisseria lactamica	96.852	100	REJECT
+nadK	Neisseria sp. Marseille-Q6792	96.857	100	REJECT
+cdsA	Neisseria meningitidis	96.867	100	REJECT
+ppx	Neisseria meningitidis	96.873	100	REJECT
+lptE	Neisseria sp. Marseille-Q6792	96.875	100	REJECT
+argG	Neisseria meningitidis alpha14	96.875	100	REJECT
+murA	Neisseria lactamica	96.89	100	REJECT
+era	Neisseria meningitidis	96.902	100	REJECT
+etfA	Neisseria polysaccharea	96.902	100	REJECT
+purM	Neisseria lactamica	96.908	100	REJECT
+carA	Neisseria meningitidis	96.914	100	REJECT
+ndhC	Neisseria meningitidis	96.919	100	REJECT
+rnhB	Neisseria cinerea	96.923	100	REJECT
+vsr	Neisseria meningitidis	96.927	100	REJECT
+pqiB	Neisseria lactamica	96.931	100	REJECT
+trpC	Neisseria meningitidis	96.935	100	REJECT
+nuoH	Neisseria meningitidis	96.936	100	REJECT
+sbp	Neisseria meningitidis	96.939	87	REJECT
+yciK	Neisseria meningitidis	96.944	100	REJECT
+lnt	Neisseria polysaccharea	96.946	100	REJECT
+fkpA	Neisseria meningitidis	96.947	100	REJECT
+cysB	Neisseria polysaccharea	96.951	100	REJECT
+degU	Neisseria meningitidis	96.951	99	REJECT
+pheS	Neisseria meningitidis	96.954	99	REJECT
+lolE	Neisseria meningitidis	96.955	100	REJECT
+maeB	Neisseria meningitidis	96.956	100	REJECT
+tsf	Neisseria meningitidis	96.959	100	REJECT
+ndhJ	Neisseria subflava	96.97	100	REJECT
+mlaD	Neisseria meningitidis	96.97	100	REJECT
+purF	Neisseria meningitidis	96.97	100	REJECT
+trpF	Neisseria meningitidis	96.975	100	REJECT
+mltB	Neisseria meningitidis	96.978	100	REJECT
+kdsB	Neisseria meningitidis	96.982	100	REJECT
+holA	Neisseria meningitidis	96.997	100	REJECT
+pmbA	Neisseria meningitidis 053442,	96.999	100	REJECT
+purA	Neisseria meningitidis	97.0	100	REJECT
+ruvC	Neisseria meningitidis	97.02	100	REJECT
+crtB	Neisseria meningitidis	97.022	100	REJECT
+prfA	Neisseria meningitidis	97.029	100	REJECT
+macA	Neisseria meningitidis	97.031	100	REJECT
+dapB	Neisseria meningitidis M01-240355,	97.037	100	REJECT
+nuoK	Neisseria meningitidis	97.059	100	REJECT
+sodB	Neisseria lactamica	97.059	100	REJECT
+abgT	Neisseria meningitidis	97.068	100	REJECT
+fbpC	Neisseria meningitidis	97.073	100	REJECT
+ttcA	Neisseria meningitidis NIID777 DNA,	97.083	100	REJECT
+hemE	Neisseria meningitidis	97.089	100	REJECT
+rpmE2	Neisseria cinerea	97.101	100	REJECT
+tmk	Neisseria meningitidis	97.101	100	REJECT
+yccS	Neisseria meningitidis	97.106	81	REJECT
+amgK	Neisseria lactamica	97.114	100	REJECT
+rsmG	Neisseria lactamica 020-06	97.115	100	REJECT
+tldD	Neisseria meningitidis	97.115	100	REJECT
+nusB	Neisseria meningitidis	97.119	100	REJECT
+purE	Neisseria meningitidis	97.119	100	REJECT
+pgpA	Neisseria meningitidis	97.119	100	REJECT
+cbbZC	Neisseria meningitidis	97.121	100	REJECT
+ampG	Neisseria meningitidis	97.123	100	REJECT
+rplW	Neisseria lactamica	97.143	100	REJECT
+rayT	Neisseria meningitidis	97.143	92	REJECT
+dnaK	Neisseria meningitidis NIID777 DNA,	97.149	100	REJECT
+bamD	Neisseria meningitidis	97.15	100	REJECT
+gloC	Neisseria meningitidis	97.156	100	REJECT
+dcd	Neisseria meningitidis	97.168	99	REJECT
+rluC	Neisseria cinerea	97.18	100	REJECT
+mutS2	Neisseria meningitidis	97.195	100	REJECT
+trmL	Neisseria meningitidis	97.204	100	REJECT
+kdsC	Neisseria sp. Marseille-Q6792	97.207	100	REJECT
+lspA	Neisseria lactamica	97.208	97	REJECT
+trmO	Neisseria meningitidis	97.21	100	REJECT
+lpxH	Neisseria polysaccharea	97.214	99	REJECT
+msrC	Neisseria meningitidis	97.222	100	REJECT
+gmk	Neisseria sp. Marseille-Q6792	97.249	100	REJECT
+gatC	Neisseria meningitidis 8013,	97.251	100	REJECT
+pyrI	Neisseria lactamica	97.253	69	PASS
+ftsH	Neisseria meningitidis alpha14	97.256	100	REJECT
+thyA	Neisseria meningitidis	97.257	99	REJECT
+rsuA	Neisseria meningitidis	97.258	100	REJECT
+rplD	Neisseria meningitidis NIID777 DNA,	97.262	100	REJECT
+rplS	Neisseria meningitidis	97.268	100	REJECT
+pgl	Neisseria meningitidis 053442,	97.27	100	REJECT
+rnpA	Neisseria meningitidis	97.275	100	REJECT
+hfq	Neisseria polysaccharea	97.279	100	REJECT
+lysC	Neisseria cinerea	97.291	100	REJECT
+ubiX	Neisseria lactamica	97.293	100	REJECT
+nuoN	Neisseria meningitidis	97.299	99	REJECT
+ispF	Neisseria lactamica	97.308	100	REJECT
+trmR	Neisseria meningitidis	97.309	100	REJECT
+ispG	Neisseria meningitidis	97.314	100	REJECT
+rlpA	Neisseria meningitidis	97.321	82	REJECT
+yqaA	Neisseria meningitidis	97.343	100	REJECT
+racE	Neisseria meningitidis	97.352	100	REJECT
+pncB2	Neisseria meningitidis	97.353	100	REJECT
+ihfA	Neisseria meningitidis	97.36	100	REJECT
+plsX	Neisseria meningitidis	97.363	98	REJECT
+sdhD	Neisseria meningitidis	97.368	100	REJECT
+rho	Neisseria meningitidis rho gene,	97.371	81	REJECT
+rppH	Neisseria meningitidis	97.373	100	REJECT
+hflX	Neisseria meningitidis	97.375	97	REJECT
+smpB	Neisseria meningitidis	97.386	100	REJECT
+dxs	Neisseria meningitidis	97.388	100	REJECT
+kdsA	Neisseria meningitidis	97.39	100	REJECT
+pyrB	Neisseria lactamica 020-06	97.397	100	REJECT
+yohK	Neisseria meningitidis	97.403	100	REJECT
+guaB	Neisseria meningitidis	97.404	100	REJECT
+dapF	Neisseria meningitidis	97.418	100	REJECT
+def1	Neisseria meningitidis	97.421	100	REJECT
+nqrC	Neisseria meningitidis	97.426	100	REJECT
+blh	Neisseria meningitidis	97.436	100	REJECT
+secF	Neisseria meningitidis	97.436	100	REJECT
+phrA	Neisseria lactamica	97.436	96	REJECT
+parB	Neisseria meningitidis	97.445	100	REJECT
+dsbD	Neisseria meningitidis	97.453	100	REJECT
+sad	Neisseria meningitidis	97.47	100	REJECT
+pqiA	Neisseria meningitidis WUE 2594	97.471	100	REJECT
+ribE	Neisseria lactamica	97.484	100	REJECT
+nqrB	Neisseria meningitidis	97.486	100	REJECT
+citN	Neisseria meningitidis	97.489	100	REJECT
+ascD	Neisseria meningitidis M0579,	97.5	100	REJECT
+ybaK	Neisseria lactamica	97.5	100	REJECT
+pyrE	Neisseria lactamica	97.508	100	REJECT
+plsY	Neisseria meningitidis	97.512	100	REJECT
+slyD	Neisseria meningitidis	97.516	100	REJECT
+ssb	Neisseria meningitidis	97.524	100	REJECT
+sspA	Neisseria meningitidis M0579,	97.525	100	REJECT
+sucD	Neisseria polysaccharea	97.531	100	REJECT
+rpsB	Neisseria meningitidis	97.531	100	REJECT
+hemN	Neisseria meningitidis M04-240196,	97.539	100	REJECT
+lpxA	Neisseria meningitidis	97.555	100	REJECT
+map	Neisseria meningitidis	97.564	100	REJECT
+ppa	Neisseria lactamica	97.566	100	REJECT
+cntI	Neisseria meningitidis	97.569	100	REJECT
+tam	Haemophilus influenzae	97.573	100	REJECT
+rbfA	Neisseria polysaccharea	97.581	100	REJECT
+atpB	Neisseria meningitidis	97.581	100	REJECT
+mrcA	Neisseria meningitidis	97.581	100	REJECT
+trpA	Neisseria meningitidis 8013,	97.583	100	REJECT
+hpnE	Neisseria meningitidis	97.589	99	REJECT
+mlaF	Neisseria lactamica	97.592	99	REJECT
+pnp	Neisseria meningitidis	97.595	100	REJECT
+degQ	Neisseria meningitidis LNP21362,	97.6	100	REJECT
+yeeA	Neisseria meningitidis	97.603	100	REJECT
+rseP	Neisseria meningitidis serogroup A	97.614	100	REJECT
+ykgO	Neisseria meningitidis	97.619	100	REJECT
+ybaB	Neisseria lactamica	97.619	100	REJECT
+sucB	Neisseria meningitidis	97.631	100	REJECT
+yceJ	Neisseria meningitidis	97.636	80	REJECT
+tadA	Neisseria meningitidis	97.652	100	REJECT
+ndk	Neisseria meningitidis	97.653	100	REJECT
+zapE	Neisseria meningitidis	97.656	100	REJECT
+csh	Neisseria meningitidis NMB	97.671	100	REJECT
+ldhA	Neisseria meningitidis 053442,	97.688	100	REJECT
+ftsE	Neisseria meningitidis	97.696	100	REJECT
+hisA	Neisseria meningitidis	97.696	100	REJECT
+rpsA	Neisseria polysaccharea	97.699	100	REJECT
+fur	Neisseria meningitidis	97.701	100	REJECT
+fabI	Neisseria lactamica	97.71	100	REJECT
+waaA	Neisseria meningitidis 053442,	97.72	100	REJECT
+nadE	Neisseria lactamica	97.727	100	REJECT
+farR	Neisseria meningitidis	97.732	100	REJECT
+trmD	Neisseria meningitidis	97.733	100	REJECT
+rpmH	Neisseria meningitidis	97.744	85	REJECT
+alx	Neisseria meningitidis G2136,	97.744	100	REJECT
+dgkA	Neisseria polysaccharea	97.744	100	REJECT
+lpxB	Neisseria lactamica 020-06	97.749	100	REJECT
+nosD	Neisseria lactamica	97.755	100	REJECT
+rluF	Neisseria cinerea	97.76	100	REJECT
+pykA	Neisseria meningitidis	97.76	100	REJECT
+mraY	Neisseria lactamica 020-06	97.772	100	REJECT
+ruvA	Neisseria meningitidis	97.778	100	REJECT
+rpsO	Neisseria meningitidis	97.778	100	REJECT
+mltG	Neisseria meningitidis	97.793	100	REJECT
+aat	Neisseria meningitidis	97.796	100	REJECT
+hisB	Neisseria meningitidis	97.805	99	REJECT
+yggX	Neisseria meningitidis	97.812	100	REJECT
+miaB	Neisseria meningitidis	97.818	100	REJECT
+pdhR	Neisseria meningitidis	97.821	100	REJECT
+hisD	Neisseria meningitidis 053442,	97.829	100	REJECT
+apaH	Neisseria meningitidis	97.834	100	REJECT
+rplB	Neisseria meningitidis	97.842	100	REJECT
+ppiB	Neisseria meningitidis	97.843	100	REJECT
+aroK	Neisseria meningitidis	97.856	100	REJECT
+coaE	Neisseria meningitidis	97.872	100	REJECT
+rlmH	Neisseria meningitidis	97.876	100	REJECT
+tcdA	Neisseria meningitidis	97.882	55	PASS
+ubiJ	Neisseria meningitidis	97.884	100	REJECT
+mqo	Neisseria meningitidis alpha14	97.887	100	REJECT
+nrgA	Neisseria meningitidis	97.894	100	REJECT
+gltA	Neisseria meningitidis	97.897	100	REJECT
+lpd	Neisseria meningitidis	97.908	100	REJECT
+thiL	Neisseria meningitidis	97.91	100	REJECT
+fusA	Neisseria meningitidis	97.911	100	REJECT
+ftsL	Neisseria meningitidis	97.917	100	REJECT
+ptsI	Neisseria meningitidis M01-240355,	97.917	100	REJECT
+groS	Neisseria lactamica	97.959	51	PASS
+dtd	Neisseria meningitidis	97.967	100	REJECT
+ilvA	Neisseria meningitidis	97.97	100	REJECT
+secB	Neisseria meningitidis	97.973	100	REJECT
+hisI	Neisseria meningitidis	97.98	100	REJECT
+iscX	Neisseria meningitidis 053442,	97.98	100	REJECT
+ypjD	Neisseria meningitidis NIID777 DNA,	98.017	100	REJECT
+prsA	Neisseria meningitidis	98.024	100	REJECT
+ydjA	Neisseria meningitidis	98.029	100	REJECT
+cspD	Neisseria meningitidis	98.039	100	REJECT
+nudB	Neisseria lactamica	98.039	100	REJECT
+ybaN	Neisseria lactamica	98.045	99	REJECT
+orn	Neisseria lactamica	98.05	100	REJECT
+tsaE	Neisseria meningitidis	98.052	100	REJECT
+chrR	Neisseria meningitidis	98.057	99	REJECT
+pdxA	Neisseria meningitidis	98.058	99	REJECT
+fmt	Neisseria meningitidis	98.058	100	REJECT
+rlmE	Neisseria meningitidis	98.068	100	REJECT
+nosF	Neisseria meningitidis	98.071	69	PASS
+ftsA	Neisseria meningitidis	98.072	100	REJECT
+yfeX	Neisseria meningitidis	98.072	100	REJECT
+yabJ	Neisseria lactamica	98.072	100	REJECT
+cc4	Neisseria meningitidis	98.077	100	REJECT
+minC	Neisseria meningitidis	98.082	100	REJECT
+prmA	Neisseria lactamica 020-06	98.086	100	REJECT
+macB	Neisseria lactamica	98.088	100	REJECT
+yccA	Neisseria meningitidis	98.099	100	REJECT
+putP	Neisseria meningitidis	98.101	100	REJECT
+thiB	Neisseria meningitidis	98.104	100	REJECT
+apt	Neisseria sp. Marseille-Q6792	98.129	100	REJECT
+iscA	Neisseria polysaccharea	98.131	100	REJECT
+nuoB	Neisseria subflava	98.137	100	REJECT
+rpmE	Neisseria lactamica	98.148	100	REJECT
+rsgA	Neisseria meningitidis	98.16	100	REJECT
+yhbE	Neisseria meningitidis NMB	98.16	100	REJECT
+lapB	Neisseria meningitidis	98.171	99	REJECT
+fadM	Neisseria lactamica	98.177	100	REJECT
+argC	Neisseria polysaccharea	98.18	100	REJECT
+haeIIIM	Neisseria lactamica	98.187	100	REJECT
+nth	Neisseria lactamica	98.19	100	REJECT
+iscU	Neisseria meningitidis	98.191	100	REJECT
+rsfS	Neisseria polysaccharea	98.191	100	REJECT
+rsmE	Neisseria meningitidis	98.192	99	REJECT
+secE	Neisseria meningitidis	98.208	100	REJECT
+ccoN1	Neisseria meningitidis	98.224	100	REJECT
+sppA	Neisseria polysaccharea	98.232	98	REJECT
+folA	Neisseria meningitidis	98.234	93	REJECT
+rimM	Neisseria polysaccharea	98.235	100	REJECT
+nlpD	Neisseria meningitidis	98.235	100	REJECT
+hslR	Neisseria meningitidis	98.259	100	REJECT
+rng	Neisseria meningitidis	98.26	100	REJECT
+prs	Neisseria meningitidis	98.272	100	REJECT
+yclP	Neisseria meningitidis alpha14	98.289	100	REJECT
+secG	Neisseria polysaccharea	98.291	100	REJECT
+lutP	Neisseria meningitidis	98.299	100	REJECT
+rpsG	Neisseria meningitidis	98.301	100	REJECT
+acpP	Neisseria meningitidis	98.312	100	REJECT
+hdfR	Neisseria meningitidis	98.319	100	REJECT
+atpA	Neisseria meningitidis	98.33	100	REJECT
+bioF	Neisseria meningitidis	98.338	100	REJECT
+spuE	Neisseria lactamica 020-06	98.339	100	REJECT
+hisG	Neisseria meningitidis	98.348	100	REJECT
+mscS	Neisseria meningitidis	98.351	100	REJECT
+dtpT	Neisseria meningitidis	98.354	100	REJECT
+greB	Neisseria meningitidis	98.374	100	REJECT
+rpsL	Neisseria lactamica	98.387	100	REJECT
+gpmA	Neisseria cinerea	98.392	100	REJECT
+efp	Neisseria meningitidis	98.396	100	REJECT
+minD	Neisseria polysaccharea	98.407	100	REJECT
+rsmH	Neisseria meningitidis	98.428	99	REJECT
+iscR	Neisseria sp. Marseille-Q6792	98.434	100	REJECT
+gltS	Neisseria meningitidis alpha14	98.436	100	REJECT
+hisZ	Neisseria meningitidis NMB	98.438	100	REJECT
+ubiK	Neisseria polysaccharea	98.442	100	REJECT
+cyaY	Neisseria meningitidis	98.447	99	REJECT
+htpX	Neisseria meningitidis	98.452	100	REJECT
+mepM	Neisseria meningitidis	98.453	100	REJECT
+petC	Neisseria meningitidis	98.479	100	REJECT
+slt	Neisseria meningitidis	98.485	100	REJECT
+msbA	Neisseria meningitidis NIID835 DNA,	98.502	100	REJECT
+glnB	Neisseria lactamica	98.525	100	REJECT
+ccpA	Neisseria cinerea	98.54	100	REJECT
+rpoD	Neisseria meningitidis	98.553	100	REJECT
+rpsS	Neisseria meningitidis	98.566	100	REJECT
+yfgD	Neisseria meningitidis	98.588	100	REJECT
+thrB	Neisseria meningitidis	98.588	99	REJECT
+hisH	Neisseria meningitidis	98.592	100	REJECT
+rplT	Neisseria polysaccharea	98.611	100	REJECT
+ecfG	Neisseria lactamica	98.639	100	REJECT
+PGdx	Neisseria meningitidis	98.645	100	REJECT
+cysE	Neisseria lactamica	98.657	100	REJECT
+slyX	Neisseria meningitidis	98.658	66	PASS
+scpB	Neisseria meningitidis alpha710,	98.673	100	REJECT
+sdhC	Neisseria meningitidis	98.677	100	REJECT
+mraZ	Neisseria meningitidis	98.684	100	REJECT
+rpsR	Neisseria lactamica	98.701	100	REJECT
+bcp	Neisseria meningitidis	98.71	71	PASS
+sucC	Neisseria meningitidis	98.715	100	REJECT
+fabF	Neisseria meningitidis	98.718	100	REJECT
+atpF	Neisseria meningitidis	98.726	100	REJECT
+engB	Neisseria meningitidis	98.726	99	REJECT
+typA	Neisseria meningitidis NIID835 DNA,	98.729	99	REJECT
+ihfB	Neisseria polysaccharea	98.73	100	REJECT
+lpxD	Neisseria meningitidis	98.755	100	REJECT
+ilvI	Neisseria meningitidis	98.785	100	REJECT
+rplF	Neisseria subflava	98.789	77	PASS
+sdhE	Neisseria meningitidis	98.795	100	REJECT
+trxA	Neisseria meningitidis	98.799	100	REJECT
+hpaC	Neisseria meningitidis	98.802	100	REJECT
+ilvC	Neisseria meningitidis	98.817	100	REJECT
+atpC	Neisseria meningitidis	98.818	100	REJECT
+cpxR	Neisseria meningitidis	98.82	100	REJECT
+grxC	Neisseria meningitidis	98.837	100	REJECT
+pqiC	Neisseria meningitidis	98.844	100	REJECT
+epsJ	Neisseria meningitidis	98.857	87	REJECT
+pasT	Neisseria meningitidis	98.858	100	REJECT
+yajC	Neisseria meningitidis NMB	98.876	100	REJECT
+nusG	Neisseria meningitidis	98.883	100	REJECT
+rpmF	Neisseria meningitidis	98.889	100	REJECT
+oxyR	Neisseria polysaccharea	98.914	100	REJECT
+rplL	Neisseria meningitidis	98.925	100	REJECT
+argA	Neisseria meningitidis NIID835 DNA,	98.932	100	REJECT
+sdcS	Neisseria meningitidis	98.941	100	REJECT
+soj	Neisseria meningitidis	98.966	100	REJECT
+rpsC	Neisseria meningitidis	98.99	100	REJECT
+tatA	Neisseria meningitidis	99.02	100	REJECT
+rpsJ	Neisseria meningitidis	99.038	100	REJECT
+yafJ	Neisseria meningitidis NIID835 DNA,	99.051	100	REJECT
+rplC	Neisseria meningitidis alpha14	99.07	100	REJECT
+rplX	Neisseria meningitidis	99.074	100	REJECT
+fatA	Neisseria meningitidis	99.08	97	REJECT
+fbpA	Neisseria meningitidis	99.096	100	REJECT
+glyQ	Neisseria meningitidis NIID835 DNA,	99.101	99	REJECT
+glcA	Neisseria meningitidis	99.123	100	REJECT
+recX	Neisseria meningitidis NIID835 DNA,	99.134	100	REJECT
+speB	Neisseria meningitidis	99.134	100	REJECT
+folB	Neisseria meningitidis	99.16	100	REJECT
+panS	Neisseria lactamica	99.162	100	REJECT
+rpsM	Neisseria meningitidis	99.174	100	REJECT
+ftsQ	Neisseria meningitidis	99.177	100	REJECT
+rplN	Neisseria meningitidis	99.187	100	REJECT
+rpsD	Neisseria meningitidis	99.195	100	REJECT
+ibaG	Neisseria meningitidis	99.197	100	REJECT
+lolA	Neisseria meningitidis	99.199	100	REJECT
+rplJ	Neisseria meningitidis	99.202	100	REJECT
+tpiA	Neisseria meningitidis M0579,	99.225	100	REJECT
+rpsT	Neisseria lactamica	99.242	100	REJECT
+minE	Neisseria polysaccharea	99.242	100	REJECT
+rpsQ	Neisseria meningitidis	99.242	100	REJECT
+pyrP	Neisseria meningitidis NIID835 DNA,	99.273	100	REJECT
+ispD	Neisseria meningitidis	99.275	100	REJECT
+ftsB	Neisseria meningitidis	99.283	100	REJECT
+rpoA	Neisseria meningitidis	99.291	100	REJECT
+trkA	Neisseria meningitidis	99.292	100	REJECT
+exbD	Neisseria meningitidis	99.31	100	REJECT
+atpG	Neisseria meningitidis 053442,	99.315	100	REJECT
+glnP	Neisseria meningitidis alpha14	99.331	100	REJECT
+grxD	Neisseria meningitidis	99.359	100	REJECT
+fabH	Neisseria meningitidis NIID835 DNA,	99.377	100	REJECT
+ilvH	Neisseria meningitidis	99.39	100	REJECT
+nrdB	Neisseria meningitidis	99.394	100	REJECT
+rplE	Neisseria meningitidis	99.444	100	REJECT
+rplQ	Neisseria meningitidis	99.458	100	REJECT
+rpmD	Neisseria meningitidis	99.462	100	REJECT
+ogt	Neisseria meningitidis	99.469	100	REJECT
+hisF	Neisseria meningitidis 053442,	99.479	100	REJECT
+petA	Neisseria meningitidis	99.485	100	REJECT
+rpoZ	Neisseria meningitidis	99.517	100	REJECT
+rpsU	Neisseria meningitidis	99.531	100	REJECT
+manX	Neisseria meningitidis	99.543	100	REJECT
+infA	Neisseria meningitidis	99.543	100	REJECT
+rplP	Neisseria meningitidis	99.556	100	REJECT
+rpsP	Neisseria meningitidis	99.593	100	REJECT
+yedI	Neisseria meningitidis	99.596	100	REJECT
+rpsE	Neisseria meningitidis	99.615	100	REJECT
+cysQ	Neisseria meningitidis NIID835 DNA,	99.623	100	REJECT
+hemH	Neisseria meningitidis	99.631	100	REJECT
+zapA	Neisseria meningitidis	99.673	100	REJECT
+secY	Neisseria meningitidis	99.695	100	REJECT
+exbB	Neisseria meningitidis	99.698	100	REJECT
+yqgF	Neisseria meningitidis	99.699	100	REJECT
+yggS	Neisseria meningitidis	99.709	100	REJECT
+metP	Neisseria meningitidis NIID838 DNA,	99.709	100	REJECT
+fcuA	Neisseria meningitidis	99.74	100	REJECT
+rpsH	Neisseria meningitidis	99.746	100	REJECT
+infC	Neisseria meningitidis NIID835 DNA,	99.753	100	REJECT
+metQ	Neisseria meningitidis NIID838 DNA,	99.769	100	REJECT
+fabZ	Neisseria meningitidis	99.778	100	REJECT
+fabD	Neisseria meningitidis NIID835 DNA,	99.784	100	REJECT
+tyrC	Neisseria meningitidis	99.885	100	REJECT
+tamA	Neisseria meningitidis	99.895	100	REJECT
+rfaF	Neisseria meningitidis	99.901	100	REJECT
+tgt	Neisseria meningitidis	99.91	100	REJECT
+lplT	Neisseria meningitidis	99.924	100	REJECT
+rpmB	Neisseria meningitidis NIID835 DNA,	100.0	100	REJECT
+rplU	Neisseria meningitidis	100.0	100	REJECT
+rpmG	Neisseria meningitidis NIID835 DNA,	100.0	100	REJECT
+rpmI	Neisseria meningitidis	100.0	100	REJECT
+rpmC	Neisseria meningitidis	100.0	100	REJECT
+hupB	Neisseria meningitidis NIID835 DNA,	100.0	100	REJECT
+ispB	Neisseria meningitidis	100.0	100	REJECT
+thrS	Neisseria meningitidis NIID835 DNA,	100.0	100	REJECT
+nsrR	Neisseria meningitidis	100.0	100	REJECT
+rplM	Neisseria meningitidis	100.0	100	REJECT
+rpsI	Neisseria meningitidis	100.0	100	REJECT
+ptsH	Neisseria meningitidis	100.0	100	REJECT
+rpsN	Neisseria meningitidis	100.0	100	REJECT
+nhaP2	Neisseria meningitidis	100.0	100	REJECT
+tag	Neisseria meningitidis	100.0	100	REJECT
+sstT	Neisseria meningitidis	100.0	100	REJECT
+dksA	Neisseria meningitidis	100.0	100	REJECT
+gpsA	Neisseria meningitidis	100.0	100	REJECT
+rpmA	Neisseria meningitidis	100.0	100	REJECT
