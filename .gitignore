@@ -8,3 +8,8 @@ results/exclusivity/blast_results.tsv
 work/
 .nextflow/
 .nextflow.log*
+
+results/
+work/
+.nextflow/
+.nextflow.log*
