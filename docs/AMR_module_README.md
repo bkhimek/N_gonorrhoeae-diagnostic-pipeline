@@ -197,7 +197,23 @@ Colour-coded summary table: green = wild-type, red = resistance mutation detecte
 | **Predicted ciprofloxacin R** | **170** | **60%** |
 | **Predicted reduced cephalosporin susceptibility** | **143** | **51%** |
 
-Notable AMRFinder-only findings: `blaTEM-1` (PPNG — plasmid-mediated penicillinase) and `tet(M)` (tetracycline resistance) detected in select strains — genes not detectable by point-mutation calling alone, demonstrating the value of the dual-approach design.
+### AMRFinderPlus findings — selected highlights (283 strains)
+
+| Element | Class | N | % | Note |
+|---|---|---|---|---|
+| rpsJ_V57M | Tetracycline | 211 | 75% | Chromosomal 30S ribosomal S10 mutation |
+| folP_R228S | Sulfonamide | 201 | 71% | DHPS active-site mutation |
+| ponA_L421P | Beta-lactam | 160 | 57% | PBP1 mutation — synergistic with mosaic penA |
+| porB1b_G120K | Beta-lactam | 107 | 38% | Porin permeability reduction |
+| rpoB_H553N | Rifampicin | 86 | 30% | RNA polymerase beta subunit |
+| mtrR_A39T | Multiple | 77 | 27% | MtrCDE efflux derepression |
+| tet(M) | Tetracycline | 48 | 17% | Plasmid ribosomal protection (TRNG) |
+| blaTEM-1 | Beta-lactam | 42 | 15% | Plasmid beta-lactamase (PPNG) |
+| blaTEM-135 | Beta-lactam | 17 | 6% | Extended-spectrum BL variant |
+
+Notable: `rpsJ_V57M` (chromosomal tetracycline resistance, 75%) far outpaces `tet(M)` (17%), and `folP_R228S` (sulfonamide resistance, 71%) is near-ubiquitous despite sulfonamides being abandoned for >50 years — both reflecting historical selection pressure fixed in the population. `ponA_L421P` (57%) acts synergistically with mosaic penA, confirming that cephalosporin resistance in *N. gonorrhoeae* is a polygenic trait.
+
+None of these markers are detectable by the alignment pipeline, demonstrating the value of the dual-approach design. See [docs/AMR_case_study.md](AMR_case_study.md) for the full AMRFinder element table and biological interpretation.
 
 ---
 
