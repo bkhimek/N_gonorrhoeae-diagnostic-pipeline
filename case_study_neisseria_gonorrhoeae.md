@@ -8,7 +8,7 @@
 
 ## Background
 
-*Neisseria gonorrhoeae* (the gonococcus) is the causative agent of gonorrhoea, a globally prevalent sexually transmitted infection with rising antimicrobial resistance. Rapid, accurate molecular diagnosis is critical for patient management and surveillance. The challenge in designing species-specific PCR assays is extreme: *N. gonorrhoeae* is phylogenetically almost indistinguishable from its commensal relative *N. meningitidis*, which colonises the nasopharynx of healthy individuals. Any diagnostic target must be present in essentially all gonococci (inclusivity) while producing no signal from meningococci or any other organism (exclusivity).
+*Neisseria gonorrhoeae* (the gonococcus) is the causative agent of gonorrhoea, a globally prevalent sexually transmitted infection with rising antimicrobial resistance. Rapid, accurate molecular diagnosis is critical for patient management and surveillance. The challenge in designing species-specific PCR assays is extreme: *N. gonorrhoeae* is phylogenetically very closely related to its commensal relative *N. meningitidis*, which colonises the nasopharynx of healthy individuals, which commonly colonises the nasopharynx of healthy individuals but can also cause invasive diseases such as bacterial meningitis and septicaemia. Any diagnostic target must be present in essentially all gonococci (inclusivity) while producing no signal from meningococci or any other organism (exclusivity).
 
 This case study describes a fully automated bioinformatics pipeline to identify and validate candidate PCR target genes, culminating in the extraction of primer-ready sequences for the top candidates.
 
