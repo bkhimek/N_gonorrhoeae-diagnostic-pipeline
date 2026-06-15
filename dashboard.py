@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
 AMR Dashboard — N. gonorrhoeae diagnostic pipeline
-Visualises AMRFinderPlus results + core-genome phylogeny.
+Visualises AMRFinderPlus results + core-genome phylogeny + promoter variants.
 
 Usage:
     python dashboard.py --data ~/n_gonorrhoeae_project/results/amr/
     python dashboard.py --data ~/n_gonorrhoeae_project/results/amr/ \
-                        --tree ~/n_gonorrhoeae_project/phylogeny/parsnp.tree
+                        --tree ~/n_gonorrhoeae_project/phylogeny/parsnp.tree \
+                        --promoters ~/n_gonorrhoeae_project/results/promoter_summary.tsv
 """
 
 import argparse
@@ -27,6 +28,8 @@ def parse_args():
                    help="Directory containing AMRFinderPlus .tsv files")
     p.add_argument("--tree", default=None,
                    help="parsnp.tree Newick file (optional, enables phylogeny tab)")
+    p.add_argument("--promoters", default=None,
+                   help="promoter_summary.tsv file (optional, enables promoter tab)")
     p.add_argument("--port", type=int, default=8050)
     return p.parse_args()
 
@@ -82,6 +85,18 @@ def build_tables(df, n_strains):
 
     burden = df.groupby("Strain")["Element symbol"].nunique().to_dict()
     return gene_prev, class_prev, pa, burden
+
+# ─── Promoter data loading ────────────────────────────────────────────────────
+
+INDEL_OUTLIER_THRESHOLD = 20   # indels above this → flag as possible assembly artefact
+
+def load_promoter_results(tsv_path):
+    """Load promoter_summary.tsv; return dict of target → DataFrame."""
+    df = pd.read_csv(tsv_path, sep="\t", low_memory=False)
+    df["indels"] = pd.to_numeric(df["indels"], errors="coerce")
+    df["snps"]   = pd.to_numeric(df["snps"],   errors="coerce")
+    df["flagged"] = df["indels"] > INDEL_OUTLIER_THRESHOLD
+    return {t: grp.copy() for t, grp in df.groupby("target")}
 
 # ─── Colours ──────────────────────────────────────────────────────────────────
 
@@ -296,7 +311,135 @@ def tab_phylo(tree_fig, err_msg):
     ], style=CARD)
 
 
-def make_layout(gene_prev, class_prev, pa, n_strains, all_classes, has_tree):
+def fig_promoter_indels(prom_data, target):
+    """Bar chart: distribution of indel counts for one promoter target."""
+    if target not in prom_data:
+        return go.Figure().update_layout(title=f"No data for {target}")
+    df = prom_data[target].dropna(subset=["indels"])
+    if df.empty:
+        return go.Figure().update_layout(title=f"No BLAST hits for {target}")
+
+    counts = df["indels"].astype(int).value_counts().sort_index().reset_index()
+    counts.columns = ["indels", "strains"]
+    counts["colour"] = counts["indels"].apply(
+        lambda x: "#c0392b" if x > INDEL_OUTLIER_THRESHOLD else "#4c78a8"
+    )
+
+    fig = go.Figure(go.Bar(
+        x=counts["indels"].astype(str),
+        y=counts["strains"],
+        marker_color=counts["colour"],
+        text=counts["strains"],
+        textposition="outside",
+        hovertemplate="Indels vs FA1090: %{x}<br>Strains: %{y}<extra></extra>",
+    ))
+    total    = len(df)
+    flagged  = int((df["indels"] > INDEL_OUTLIER_THRESHOLD).sum())
+    fig.update_layout(
+        title=f"{target} upstream region — indels vs FA1090 reference  ({total} strains)",
+        xaxis_title="Indel positions vs FA1090 (alignment columns with gaps)",
+        yaxis_title="Number of strains",
+        plot_bgcolor="white", paper_bgcolor="white",
+        yaxis=dict(gridcolor="#eeeeee"),
+        annotations=[dict(
+            x=1, y=1, xref="paper", yref="paper", showarrow=False,
+            text=f"<span style='color:#c0392b'>■</span> {flagged} strains >20 indels "
+                 f"(possible assembly artefacts)",
+            xanchor="right", font=dict(size=11),
+        )] if flagged else [],
+        margin=dict(t=70, b=60),
+    )
+    return fig
+
+
+def fig_promoter_snps(prom_data, target):
+    """Bar chart: distribution of SNP counts for one promoter target."""
+    if target not in prom_data:
+        return go.Figure().update_layout(title=f"No data for {target}")
+    df = prom_data[target].dropna(subset=["snps"])
+    if df.empty:
+        return go.Figure().update_layout(title=f"No BLAST hits for {target}")
+
+    counts = df["snps"].astype(int).value_counts().sort_index().reset_index()
+    counts.columns = ["snps", "strains"]
+
+    fig = go.Figure(go.Bar(
+        x=counts["snps"].astype(str),
+        y=counts["strains"],
+        marker_color="#72b7b2",
+        text=counts["strains"],
+        textposition="outside",
+        hovertemplate="SNPs vs FA1090: %{x}<br>Strains: %{y}<extra></extra>",
+    ))
+    fig.update_layout(
+        title=f"{target} upstream region — SNPs vs FA1090 reference",
+        xaxis_title="SNP count vs FA1090",
+        yaxis_title="Number of strains",
+        plot_bgcolor="white", paper_bgcolor="white",
+        yaxis=dict(gridcolor="#eeeeee"),
+        margin=dict(t=70, b=60),
+    )
+    return fig
+
+
+def tab_promoter(prom_data):
+    """Layout for the promoter variants tab."""
+    targets = ["mtrR", "porB"]
+    n_hit = {}
+    for t in targets:
+        if t in prom_data:
+            n_hit[t] = int((prom_data[t]["status"] == "hit").sum())
+
+    # Summary stats row
+    mtrr = prom_data.get("mtrR", pd.DataFrame())
+    n_indel = int((mtrr["indels"] > 0).sum()) if not mtrr.empty else 0
+    n_flag  = int((mtrr["indels"] > INDEL_OUTLIER_THRESHOLD).sum()) if not mtrr.empty else 0
+
+    def stat_box(value, label, colour="#2c3e50"):
+        return html.Div([
+            html.Div(str(value), style={"fontSize": "2rem", "fontWeight": "700",
+                                        "color": colour, "lineHeight": 1}),
+            html.Div(label, style={"fontSize": "0.8rem", "color": "#666",
+                                   "marginTop": "4px"}),
+        ], style={"textAlign": "center", "padding": "12px 24px",
+                  "border": "1px solid #dde3ea", "borderRadius": "8px",
+                  "backgroundColor": "white", "minWidth": "130px"})
+
+    stats_row = html.Div([
+        stat_box(n_hit.get("mtrR", 0), "mtrR hits"),
+        stat_box(n_indel, "strains with mtrR indels", "#e45756"),
+        stat_box(n_hit.get("porB", 0), "porB hits"),
+        stat_box(n_flag, "flagged (>20 indels)", "#c0392b"),
+    ], style={"display": "flex", "gap": "12px", "flexWrap": "wrap",
+              "marginBottom": "16px"})
+
+    note = html.P(
+        "Indels are counted as alignment gap-columns when each strain's upstream "
+        "region is pairwise-aligned to FA1090 (MAFFT). FA1090 itself lacks the classic "
+        "13-bp mtrR/mtrCDE intergenic inverted repeat; strains retaining the IR therefore "
+        "appear as insertions vs the reference. Strains with >20 indels (red bars) likely "
+        "reflect assembly quality issues rather than true biology.",
+        style={"fontSize": "0.82rem", "color": "#555", "marginBottom": "16px",
+               "lineHeight": "1.5"},
+    )
+
+    graphs = []
+    for t in targets:
+        graphs.append(html.Div([
+            html.Div([
+                dcc.Graph(figure=fig_promoter_indels(prom_data, t),
+                          config={"displayModeBar": False},
+                          style={"flex": "1"}),
+                dcc.Graph(figure=fig_promoter_snps(prom_data, t),
+                          config={"displayModeBar": False},
+                          style={"flex": "1"}),
+            ], style={"display": "flex", "gap": "12px"}),
+        ], style={**CARD, "marginBottom": "16px"}))
+
+    return html.Div([stats_row, note] + graphs, style=CARD)
+
+
+def make_layout(gene_prev, class_prev, pa, n_strains, all_classes, has_tree, has_promoter):
     tabs = [
         dcc.Tab(label="Gene prevalence",    value="tab-prev"),
         dcc.Tab(label="Drug class summary", value="tab-class"),
@@ -304,6 +447,8 @@ def make_layout(gene_prev, class_prev, pa, n_strains, all_classes, has_tree):
     ]
     if has_tree:
         tabs.append(dcc.Tab(label="Phylogeny", value="tab-phylo"))
+    if has_promoter:
+        tabs.append(dcc.Tab(label="Promoter variants", value="tab-promoter"))
 
     return html.Div([
         html.Div([
@@ -345,14 +490,24 @@ def main():
             print("  Phylogeny ready.")
 
     app = Dash(__name__, title="N. gonorrhoeae AMR")
-    app.layout = make_layout(gene_prev, class_prev, pa, n_strains, all_classes, has_tree)
+    # Promoter variants (optional)
+    prom_data = {}
+    has_promoter = args.promoters and os.path.isfile(args.promoters)
+    if has_promoter:
+        print(f"Loading promoter results from {args.promoters!r} ...")
+        prom_data = load_promoter_results(args.promoters)
+        print(f"  Targets loaded: {', '.join(prom_data.keys())}")
+
+    app.layout = make_layout(gene_prev, class_prev, pa, n_strains, all_classes,
+                             has_tree, has_promoter)
 
     @app.callback(Output("tab-content", "children"), Input("tabs", "value"))
     def render_tab(tab):
-        if tab == "tab-prev":   return tab_prevalence(gene_prev, all_classes)
-        if tab == "tab-class":  return tab_class(class_prev, n_strains)
-        if tab == "tab-heat":   return tab_heatmap(pa)
-        if tab == "tab-phylo":  return tab_phylo(tree_fig, tree_err)
+        if tab == "tab-prev":      return tab_prevalence(gene_prev, all_classes)
+        if tab == "tab-class":     return tab_class(class_prev, n_strains)
+        if tab == "tab-heat":      return tab_heatmap(pa)
+        if tab == "tab-phylo":     return tab_phylo(tree_fig, tree_err)
+        if tab == "tab-promoter":  return tab_promoter(prom_data)
 
     @app.callback(Output("prev-chart", "figure"),
                   Input("top-n-slider", "value"), Input("class-filter", "value"))
