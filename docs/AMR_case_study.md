@@ -142,6 +142,72 @@ AMRFinderPlus detected resistance-associated markers spanning six antibiotic cla
 
 ---
 
+## 3.6 Core-genome phylogenetic analysis
+
+Core-genome phylogenetics was performed using Parsnp v2.1.5, with FA1090 (GCF_000006845.1) as the reference. All 284 assemblies (283 clinical strains + reference) were included. Parsnp identified the shared core genome and generated a maximum-likelihood SNP tree; branch lengths represent SNP distance from the root. An interactive visualisation with AMR burden overlay is available in the dashboard Phylogeny tab.
+
+### 3.6.1 Phylogenetic structure
+
+The core-genome tree resolves the 283 clinical strains into **four major clades**. Three clades are compact and internally consistent, suggesting recent clonal expansion or founder effects. A fourth clade is more divergent, contributing greater within-group SNP diversity. The overall topology indicates that the 283-strain collection captures multiple independent lineages circulating within the sampled population, rather than a single outbreak clone.
+
+### 3.6.2 AMR burden across the phylogeny
+
+AMR burden — the count of unique resistance elements per strain as detected by AMRFinderPlus — was overlaid on the phylogeny as a colour scale (white = 0 elements, red = maximum):
+
+| Metric | Value |
+|--------|-------|
+| Strains with AMR data | 283 |
+| Minimum AMR burden | 0 elements |
+| Maximum AMR burden | 23 elements |
+| Mean AMR burden | 10.6 elements |
+| Median AMR burden | 12 elements |
+
+High AMR burden is not uniformly distributed across the tree. At least one clade is enriched for high-burden strains (≥ 15 resistance elements), consistent with clonal spread of a multidrug-resistant lineage. However, elevated AMR burden is also observed across multiple clades, indicating that some resistance determinants — particularly *gyrA* QRDR mutations (60% prevalence) and *rpsJ_V57M* (75% prevalence) — have been acquired convergently in independent lineages.
+
+### 3.6.3 Clonality versus convergence
+
+The co-existence of clade-specific resistance clusters and cross-clade high-prevalence markers has the following implications:
+
+- **Clonal spread:** Resistance lineages in the compact clades likely descend from a common ancestor that had already acquired a core set of resistance mutations. Surveillance should monitor these lineages for additional resistance acquisition.
+- **Convergent evolution:** The ubiquity of sulfonamide resistance (*folP_R228S*, 71%) and tetracycline resistance (*rpsJ_V57M*, 75%) across all clades confirms that these markers have become effectively fixed in the population through repeated independent selection, irrespective of phylogenetic background.
+- **Actionable finding:** Strains carrying both fluoroquinolone (*gyrA*/*parC*) and cephalosporin (*penA* mosaic) resistance markers are a priority concern. Their distribution across clades suggests that treatment failure risk is not confined to a single emergent lineage.
+
+---
+
+## 3.7 Promoter-region variant analysis
+
+In addition to coding-sequence mutations, *N. gonorrhoeae* resistance is modulated by regulatory mutations in gene promoters. The most clinically relevant is a 13-bp inverted repeat (IR; 5′-TAATTTTTATTTT-3′) in the *mtrR/mtrCDE* intergenic region: deletion of this IR derepresses the MtrCDE efflux pump, conferring reduced susceptibility to penicillins, tetracycline, and macrolides (Hagman & Shafer, 1995; PMID 7506352). A custom BLAST + MAFFT pipeline extracted and compared the 400 bp upstream of *mtrR* and 300 bp upstream of *porB* in all 283 assemblies against the FA1090 reference regions.
+
+### 3.7.1 Reference genome caveat
+
+FA1090 itself lacks the classic 13-bp IR in its *mtrR* upstream region. Consequently, clinical strains that **retain** the intact IR appear as insertions relative to FA1090, rather than the expected deletions. All indel counts are expressed as differences from the FA1090 promoter state, not from a susceptible-strain baseline.
+
+### 3.7.2 mtrR upstream region
+
+All 283 assemblies produced a BLAST hit (100% detection rate). Indel counts relative to FA1090:
+
+| Indels vs FA1090 | Strains | % cohort | Interpretation |
+|:---:|---:|---:|---|
+| 0 | 1 | 0.4 | FA1090 itself (identical) |
+| 1 | 157 | 55.5 | Minor structural variant (most common) |
+| 2 | 112 | 39.6 | Two-position change |
+| 3–9 | 8 | 2.8 | Moderate variant |
+| 27 | 1 | 0.4 | ⚠ Possible assembly issue |
+| 189 | 4 | 1.4 | ⚠ Likely assembly artefact |
+
+The dominant pattern (1–2 indels, 269/283 = 95.1%) reflects either normal sequence polymorphism in the AT-rich promoter or IR retention in the majority of strains. Five strains with >20 indels were flagged; cross-referencing confirmed their AMR burden (8 elements each) is within the normal cohort range (0–23), indicating the issue is localised to this locus rather than reflecting genome-wide quality problems.
+
+### 3.7.3 porB upstream region
+
+The *porB* upstream region is highly conserved: 276/283 strains (97.5%) show no indels relative to FA1090; four carry a single indel; three show 160 indels (the same assembly-quality outliers above). No specific promoter variants were called in this region.
+
+### 3.7.4 Limitations and next steps
+
+- **Reference strain:** A susceptible FA19-type reference (with the IR intact) would enable direct IR-deletion calling and distinguish resistant from susceptible promoter types.
+- **Validation:** Short-read mapping to the flagged strains would confirm whether the high indel counts reflect true structural variants or assembly errors.
+- **Integration:** Combining *mtrR* promoter status with *mtrR_A39T* coding mutation data (27% prevalence in this cohort) would provide a more complete picture of MtrCDE efflux regulation across the 283 strains.
+
+---
 ## 4. Technical Challenges and Solutions
 
 | Challenge | Root cause | Resolution |
