@@ -147,13 +147,13 @@ def fig_class_summary(class_prev, n_strains):
     return fig
 
 
-def fig_heatmap(pa, top_n):
+def fig_heatmap(pa, top_n, n_strains=None):
     top_genes = pa.sum().sort_values(ascending=False).head(int(top_n)).index
     sub = pa[top_genes]
     row_h = max(6, min(18, 900 // max(len(sub), 1)))
     fig = px.imshow(sub, color_continuous_scale=["#f0f4f8", "#2166ac"], aspect="auto",
                     labels={"x": "Resistance element", "y": "Strain", "color": "Present"},
-                    title=f"Presence/absence — top {len(top_genes)} elements across {len(sub)} strains")
+                    title=f"Presence/absence — top {len(top_genes)} elements across {len(sub)} strains (of {n_strains or len(pa)} total)")
     fig.update_layout(coloraxis_showscale=False, xaxis_tickangle=-50,
                       height=max(500, len(sub) * row_h), margin=dict(l=120, b=120))
     return fig
@@ -284,7 +284,7 @@ def tab_class(class_prev, n_strains):
     ], style=CARD)
 
 
-def tab_heatmap(pa):
+def tab_heatmap(pa, n_strains=None):
     n, smax = len(pa.columns), min(len(pa.columns), 50)
     return html.Div([
         html.Div([
@@ -472,7 +472,7 @@ def main():
     args = parse_args()
     print(f"Loading AMRFinder results from {args.data!r} ...")
     df = load_results(args.data)
-    n_strains = df["Strain"].nunique()
+    n_strains = len(glob.glob(os.path.join(args.data, "*.tsv"))) or df["Strain"].nunique()
     print(f"  {len(df):,} hits across {n_strains} strains.")
 
     gene_prev, class_prev, pa, burden = build_tables(df, n_strains)
@@ -505,7 +505,7 @@ def main():
     def render_tab(tab):
         if tab == "tab-prev":      return tab_prevalence(gene_prev, all_classes)
         if tab == "tab-class":     return tab_class(class_prev, n_strains)
-        if tab == "tab-heat":      return tab_heatmap(pa)
+        if tab == "tab-heat":      return tab_heatmap(pa, n_strains)
         if tab == "tab-phylo":     return tab_phylo(tree_fig, tree_err)
         if tab == "tab-promoter":  return tab_promoter(prom_data)
 
@@ -516,7 +516,7 @@ def main():
 
     @app.callback(Output("heat-chart", "figure"), Input("heat-n-slider", "value"))
     def update_heat(top_n):
-        return fig_heatmap(pa, top_n or 30)
+        return fig_heatmap(pa, top_n or 30, n_strains)
 
     print(f"\n  Dashboard running at http://localhost:{args.port}/\n")
     app.run(debug=False, port=args.port)
